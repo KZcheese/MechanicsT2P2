@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: CheckDeath
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"checkDeath","label":"","summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"dead","label":null,"summary":null,"hideLabel":false},{"key":"alive","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":225.5,"y":2.0},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"health","$type":"System.String"}},"position":{"x":-298.0,"y":68.0},"guid":"4d1ea227-6512-4103-8ebc-d86be5ec4cfc","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"12"},{"numeric":true,"defaultValues":{"b":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-116.0,"y":73.0},"guid":"324f6daf-bbe0-4231-93c2-e0798c5f968e","$version":"A","$type":"Unity.VisualScripting.LessOrEqual","$id":"14"},{"defaultValues":{},"position":{"x":68.0,"y":-34.0},"guid":"0546b634-d6f9-4c6c-85c0-6df2da0116f9","$version":"A","$type":"Unity.VisualScripting.If","$id":"16"},{"defaultValues":{},"position":{"x":-108.0,"y":-34.0},"guid":"ce7d80b9-bfa3-4220-a70a-1d063e1f026d","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"18"},{"defaultValues":{},"position":{"x":204.0,"y":-34.0},"guid":"c5c20049-634e-44be-9e45-7510044a71ac","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"20"},{"sourceUnit":{"$ref":"18"},"sourceKey":"checkDeath","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"801646ec-2a41-4d24-9d1e-38db4092f183","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"20"},"destinationKey":"dead","guid":"257e5ac5-93c6-456b-a310-08a4cd0a51af","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"20"},"destinationKey":"alive","guid":"958eb8d8-e3d0-40ac-9aa1-4a961089d6fb","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"value","destinationUnit":{"$ref":"14"},"destinationKey":"a","guid":"37f1c4ad-3951-4f71-83ac-9c736ca494a5","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"comparison","destinationUnit":{"$ref":"16"},"destinationKey":"condition","guid":"7fabed21-e610-4095-8590-ac8426c761a1","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
